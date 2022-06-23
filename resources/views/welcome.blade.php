@@ -1,8 +1,11 @@
-@component('componentes.layout')
+<x-layouts.app
+    title="Home"
+    meta-description="home web">
 
     <h1>Inicio</h1>
 
-@endcomponent
+</x-layouts.app>
+
 
 
 
