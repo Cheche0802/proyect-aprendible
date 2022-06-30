@@ -38,7 +38,8 @@ Route::view('/about', 'about')->name('About');
 
 //Forma 4 Array
 
-Route::get('/blog', [PostController::class, 'index'])->name('Blog');
+Route::get('/blog', [PostController::class, 'index'])->name('posts.index');
+Route::get('/blog/{post}',  [PostController::class, 'show'])->name('posts.show');
 
 
 
