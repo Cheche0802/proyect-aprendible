@@ -4,6 +4,7 @@ title="Crear nuevo post"
 meta-description="Este es un post nuevo">
 
 
+
 <h1> Create New post</h1>
 
 <form action="{{route('posts.store')}}" method="POST">

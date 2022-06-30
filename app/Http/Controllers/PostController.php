@@ -24,7 +24,7 @@ class PostController extends Controller
     public function create()
     {
 
-        return view('posts.create',);
+        return view('posts.create');
     }
 
     public function store(Request $request){
@@ -35,7 +35,9 @@ class PostController extends Controller
 
          $post->save();
 
-         return to_route('posts.create');
+        session()->flash('status', 'Post created');
+
+        return redirect()->route('posts.index');
 
 
 

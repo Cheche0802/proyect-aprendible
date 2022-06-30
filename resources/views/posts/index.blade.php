@@ -3,6 +3,8 @@
     title="blog"
     meta-description="blog web">
 
+
+
     <h1>Blog</h1>
 
     <a href="{{route('posts.create')}}">Create new post</a>
